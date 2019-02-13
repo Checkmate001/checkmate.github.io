@@ -1,7 +1,7 @@
 [class*="col-"]
 {
     width: 100%;
-    padding: 0 12px;
+    padding: 1em 1em;
     float: left;
 }
 
@@ -10,12 +10,53 @@
     box-sizing: border-box;
 }
 
+.project-desc
+{
+    margin: 1.5em 0;
+}
+
+.tweets
+{
+    display: none;
+}
+
+h3, h4, h5, .testimonials h6
+{
+    text-align: center;
+}
+
+.progress h4
+{
+    text-align: left;
+}
+
 @media only screen and (min-width: 600px) 
 {
     nav a
     {
         padding: 0 1.2em;
     }
+    
+    .project-desc
+    {
+        margin: 1.5em 0 0;
+    }
+    
+    h3, h4, h5, .testimonials h6
+    {
+        text-align: left;
+    }
+    
+    .project-desc h3
+    {
+        text-align: center;
+    }
+    
+    .tweets
+    {
+        display: block;
+    }
+    
     /* For tablets: */
     .col-s-1 {width: 8.33%;}
     .col-s-2 {width: 16.66%;}
@@ -38,6 +79,27 @@
     {
         padding: 0 2em;
     }
+    
+    .project-desc
+    {
+        margin: 1.5em 0 0;
+    }
+    
+    h3, h4, h5, , .testimonials h6
+    {
+        text-align: left;
+    }
+    
+    .project-desc h3
+    {
+        text-align: center;
+    }
+    
+    .tweets
+    {
+        display: block;
+    }
+    
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
