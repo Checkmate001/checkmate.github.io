@@ -1,3 +1,18 @@
+/**********************************
+*
+*   CSS Stylesheet
+*      by Carl J. Ntifo
+*
+*   Colours:   
+*       Main blue: #00bbff
+*       Dark Grey: #516075
+*       Light Grey: rgb(169, 169, 169)
+*       Accent Grey: #dde4e6
+*       White and Black: #000000, #FFFFFF
+*
+***********************************/
+
+
 [class*="col-"]
 {
     width: 100%;
@@ -10,52 +25,32 @@
     box-sizing: border-box;
 }
 
-.project-desc
-{
-    margin: 1.5em 0;
-}
+.hero-main      {width: 85%;}
+header          {padding: 0 0.5em 1em;}
+nav             {padding: 0.5em 0 0;}
 
-.tweets
-{
-    display: none;
-}
+.portfolio .col-4    {border: 1px solid #00bbff; margin-bottom: 0.8em;}
+.project-desc   {margin: 1.5em 0 0;}
 
-h3, h4, h5, .testimonials h6
-{
-    text-align: center;
-}
+.tweets         {display: none;}
 
-.progress h4
-{
-    text-align: left;
-}
+.progress h4    {text-align: left;}
+h3, h4, h5, .testimonials h6    {text-align: center;}
 
 @media only screen and (min-width: 600px) 
 {
-    nav a
-    {
-        padding: 0 1.2em;
-    }
+    .hero-main  {width: 85%;}
+    header  {padding: 2em;}
     
-    .project-desc
-    {
-        margin: 1.5em 0 0;
-    }
+    nav {padding: 2em 0 0;}
+    nav a   {padding: 0 1.2em;}
+   
+    h3, h4, h5, .testimonials h6    {text-align: left;}
     
-    h3, h4, h5, .testimonials h6
-    {
-        text-align: left;
-    }
-    
-    .project-desc h3
-    {
-        text-align: center;
-    }
-    
-    .tweets
-    {
-        display: block;
-    }
+    .portfolio .col-4    {border: none; margin-bottom: 0;}
+    .project-desc   {margin: 1.5em 0 0;}
+    .project-desc h4. .progress h4  {text-align: center;}
+    .tweets {display: block;}
     
     /* For tablets: */
     .col-s-1 {width: 8.33%;}
@@ -75,30 +70,18 @@ h3, h4, h5, .testimonials h6
 
 @media only screen and (min-width: 768px)
 {
-    nav a
-    {
-        padding: 0 2em;
-    }
+    .hero-main  {width: 100%;}
+    header  {padding: 2em;}
     
-    .project-desc
-    {
-        margin: 1.5em 0 0;
-    }
+    nav {padding: 2em 0 0;}
+    nav a   {padding: 0 2em;}
     
-    h3, h4, h5, , .testimonials h6
-    {
-        text-align: left;
-    }
+    h3, h4, h5, , .testimonials h6  {text-align: left;}
     
-    .project-desc h3
-    {
-        text-align: center;
-    }
-    
-    .tweets
-    {
-        display: block;
-    }
+    .portfolio .col-4    {border: none; margin-bottom: 0;}
+    .project-desc   {margin: 1.5em 0 0;}
+    .project-desc h4, .progress h4  {text-align: center;}
+    .tweets {display: block;}
     
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -117,7 +100,6 @@ h3, h4, h5, .testimonials h6
 header li
 {
     width: 33.33%;
-    /*padding: 0 1.2em;*/
 }
 
 section::after, .row::after 

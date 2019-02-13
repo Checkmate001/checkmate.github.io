@@ -1,3 +1,18 @@
+/**********************************
+*
+*   CSS Stylesheet
+*      by Carl J. Ntifo
+*
+*   Colours:   
+*       Main blue: #00bbff
+*       Dark Grey: #516075
+*       Light Grey: rgb(169, 169, 169)
+*       Accent Grey: #dde4e6
+*       White and Black: #000000, #FFFFFF
+*
+***********************************/
+
+
 html
 {
     scroll-behavior: smooth;
@@ -39,6 +54,16 @@ a
 {
     text-decoration: none;
     color: white;
+}
+
+.main a, .main a:visited
+{
+    color: #00bbff;
+}
+
+.main a:hover
+{
+    text-decoration: underline;
 }
 
 .hero
@@ -92,7 +117,6 @@ a
 
 header
 {
-    padding: 2em;
     margin: 0 auto;
     text-align: center;
     /*z-index: 200;*/
@@ -104,12 +128,26 @@ header .row
     width: 85%;
     margin: 0 auto;
 }
-
-nav
+.section-header
 {
-    padding: 2em 0 0;
+    position: relative;
 }
-
+.section-header::before
+{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -2px;
+    width: 100%;
+    border-bottom: 3px solid rgb(169, 169, 169);
+}
+.section-header span
+{
+    position: relative;
+    background-color: white;
+    padding: 0 0.3em;
+}
 nav li, footer li
 {
     display: inline;
@@ -153,31 +191,13 @@ p, h1, h2, h3, h4, h5, h6, a, span, small
     font-family: Arial, sans-serif;
 }
 
-h6
-{
-    font-weight: normal;
-}
-.main p
-{
-    font-size: 15px;
-}
-
-a
-{
-    text-decoration: none;
-}
-
-header a:visited
-{
-    color: white;
-}
-
 h1
 {
     font-size: 30px;
     font-weight: 300;
     color: white;
 }
+
 h2
 {
     font-size: 20px;
@@ -185,16 +205,18 @@ h2
     color: white;
 }
 
-h3
-{
-    font-size: 16px;
-}
+h3  {font-size: 1.1em;}
+h6  {font-weight: normal;}
 
 p
 {
     font-size: 1em;
     line-height: 1.66;
 }
+
+.main p {font-size: 15px;}
+a       {text-decoration: none;}
+header a:visited    {color: white;}
 
 img
 {
@@ -256,6 +278,8 @@ i
     font-size: 35px;
     color: white;
 }
+
+.social {margin: 1em 0;}
 
 .social li i
 {
@@ -321,11 +345,12 @@ i
 .progress ul
 {
     list-style-type: none;
+    padding-bottom: 0.8em
 }
 
 .progress h3
 {
-    padding: 0.5em 0;
+    padding-bottom: 0.5em;
 }
 .progress-list li
 {
@@ -334,7 +359,7 @@ i
 
 .progress-bar
 {
-    background-color: darkgray;
+    background-color: rgb(169, 169, 169);
 }
 
 [class*="lang-bar-"]

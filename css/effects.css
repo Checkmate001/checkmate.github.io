@@ -1,3 +1,18 @@
+/**********************************
+*
+*   CSS Stylesheet
+*      by Carl J. Ntifo
+*
+*   Colours:   
+*       Main blue: #00bbff
+*       Dark Grey: #516075
+*       Light Grey: rgb(169, 169, 169)
+*       Accent Grey: #dde4e6
+*       White and Black: #000000, #FFFFFF
+*
+***********************************/
+
+
 .logo_elements {
     background: url('../media/img/deng-logo-elements.png');
     position: absolute;
