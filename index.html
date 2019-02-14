@@ -50,7 +50,7 @@
             <div class="scroll">
                 <a>
                     <i class="fas fa-arrow-circle-down jump"></i>
-                    <p>Scroll down to see more...</p>
+                    <p>Click to see more...</p>
                 </a>
             </div>        
         </section>
@@ -73,14 +73,16 @@
                 - Wall.js
                 - skrllr 
                 -->
-                <div class="row">
+                <div class="title-row row">
                     <div class="col-6">
                         <img src="media/img/headshot.jpg" id="headshot"/>
                     </div>
 
                     <div class="col-4">
-                        <h1>Carl J. Ntifo</h1>
-                        <h2>Student/ Software Developer</h2>
+                        <div class="title">
+                            <h1>Carl J. Ntifo</h1>
+                            <h2>Student/ Software Developer</h2>
+                        </div>
                     </div>
                 </div>
                 <!--<div class="block-gradient gradient-1 bounce"></div>
@@ -94,7 +96,7 @@
                 <div class="logo_elements el-7"></div>
                 <div class="logo_elements el-8"></div>
 
-                <nav class="row">
+                <nav class="row" style="display: none;">
                     <ul>
                         <li class="nav nav-left"><a href="#">Resume</a></li>
                         <li class="nav nav-current"><a href="#" class="current">About Me</a></li>
@@ -108,16 +110,24 @@
             <div class="main">
                 <section id="aboutMe">
                     <div class="row">
-                        <div class="col-8" style="background-color: rgb(245,245,220); border-radius: 6px;">
-                            <h3 class="section-header"><span style="background-color: rgb(245,245,220);">About Me</span></h3>
+                        <div class="col-8">
+                            <h3 class="section-header"><span>About Me</span></h3>
+                            <br>
                             <p>
-                                My name is Carl J. Ntifo. I am a Computer Science and Computer Engineering double major at Claflin University, with a passion for software development and IT systems. Winner of YRSFoC 2015, and always looking to grow and improve myself.
+                                Hello, my name is Carl Ntifo. I am a Computer Science and Computer Engineering double major at Claflin University. Ever since I can remember I've had a passion for building things and solving problems, and that's what attracted me to software development. 
+                                <br><br>
+                                Over the past few years I have been improving my skills working with Xenon Capital Limited and SquadSocial Ltd, writing code and learning how the industry works. I have also been working on my own independant project with PedalPlan and other games/ programs I've written.
+                                <br><br>
+                                I was a Winner of YRS2015, and I welcome any opportunities to grow and improve myself. <a href="#contact">Contact Me.</a>
                             </p>
+                            <!--<p>
+                                My name is Carl J. Ntifo. I am a Computer Science and Computer Engineering double major at Claflin University, with a passion for software development and IT systems. Winner of YRSFoC 2015, and always looking to grow and improve myself.
+                            </p>-->
                         </div>
 
                         <div class="col-4 tweets">
-                            <h3 class="section-header"><span >Twitter Feed</span></h3>
-                            <a href="https://twitter.com/intent/tweet?button_hashtag=cjntifo&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #cjntifo</a>
+                            <!--<h3 class="section-header"><span >Twitter Feed</span></h3>-->
+                            <a class="twitter-timeline" data-height="300" href="https://twitter.com/cjntifo?ref_src=twsrc%5Etfw">Tweets by cjntifo</a>
                             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                         </div>
                     </div>
@@ -204,39 +214,44 @@
                     </div>
                 </section>
                 <section class="testimonials row">
-                    <div class="col-8 ">
+                    <div class="col-8 mobile-nopad">
                         <div>
-                            <h3 class="section-header"><span >Resume</span></h3><br>
-                            
-                            <h4>Xenon Captial Markets</h4>
-                            <h6>Freelance Programmer</h6>
-                            <br>
-                            <p>
-                                - I was hired to create 'spidergram', a program to calculate and display live trading metrics/ data to help.
+                            <div class="mobile-pad">
+                                <h3 class="section-header"><span>Resume</span></h3><br>
+                            </div>
+                            <div class="mobile-pad resume-item">
+                                <h4>Xenon Captial Markets</h4>
+                                <h6>Freelance Programmer</h6>
                                 <br>
-                                - Informs the traders on the floor of the market and make real-time decisions.
+                                <p>
+                                    - I was hired to create 'spidergram', a program to calculate and display live trading metrics/ data to help.
+                                    <br>
+                                    - Informs the traders on the floor of the market and make real-time decisions.
+                                    <br>
+                                    - Created the program in C# with the bmreports API, and maintain.
+                                    <br>
+                                    - I continue to provide updates the software for XCM.
+                                </p>
+                            </div>
+                            <div class="mobile-pad resume-item">
+                                <h4>SquadSocial Ltd</h4>
+                                <h6>Programming Intern</h6>
                                 <br>
-                                - Created the program in C# with the bmreports API, and maintain.
-                                <br>
-                                - I continue to provide updates the software for XCM.
-                            </p>
-                            <br>
-                            
-                            <h4>SquadSocial Ltd</h4>
-                            <h6>Programming Intern</h6>
-                            <br>
-                            <p>
-                                - I help brainstorm in the initial app development phases.
-                                <br>
-                                - Helped to manage the website and ensure responsive design, and display of legal documents.
-                                <br>
-                                - Created a script in Python to automate the retrieval of events for use in the app.
-                            </p>
+                                <p>
+                                    - I helped to brainstorm in the initial app development phases.
+                                    <br>
+                                    - Helped to manage the website and ensure responsive design, and display of legal documents.
+                                    <br>
+                                    - Created a script in Python to automate the retrieval of events for use in the app.
+                                </p>
+                            </div>
                         </div>
-                        <div class="ArticleCopy">
-                            <blockquote><p>
-                                Carl understood the objectives of the project at a fast pace and was able to deliver the project in a timely manner. At times he went above and beyond to deliver solutions for the tool. Carl would be an asset to any team.
-                            </p></blockquote>
+                        <div class="mobile-pad ArticleCopy">
+                            <blockquote>
+                                <p>
+                                    Carl understood the objectives of the project at a fast pace and was able to deliver the project in a timely manner. At times he went above and beyond to deliver solutions for the tool. Carl would be an asset to any team.
+                                </p>
+                            </blockquote>
                         </div>
                     </div>
                     <div class="col-4 progress">
@@ -288,6 +303,9 @@
                                 <h4>Others</h3>
                                 <ul class="badge-list">
                                     <li><span>PHP</span></li>
+                                    <li><span>Game Design</span></li>
+                                    <li><span>SEO</span></li>
+                                    <li><span>Responsive Design</span></li>
                                 </ul>
                             </div>
                 </section>

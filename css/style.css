@@ -186,7 +186,7 @@ nav a:hover
     display: block;
 }*/
 
-p, h1, h2, h3, h4, h5, h6, a, span, small
+p, h1, h2, h3, h4, h5, h6, a, span, small, form, input textarea
 {
     font-family: Arial, sans-serif;
 }
@@ -342,6 +342,8 @@ i
   color: white;
 }
 /*************************************************/
+.tweets {padding: 0 !important;}
+
 .progress ul
 {
     list-style-type: none;
