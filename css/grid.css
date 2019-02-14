@@ -45,7 +45,6 @@
 @media only screen and (min-width: 600px) 
 {
     .title-row  {position: relative;}
-    .title-row .title   {position: absolute;top:35%}
     
     .hero-main  {width: 85%;}
     header  {padding: 2em;}

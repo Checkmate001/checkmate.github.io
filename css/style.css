@@ -449,14 +449,16 @@ i
 }
 /*888888888888888888888888888888888888888888888*/
 
-*, *:before, *:after{
+*, *:before, *:after
+{
     margin: 0;
     padding: 0;
     direction: ltr;
     box-sizing: border-box;
 }
 
-.ArticleCopy{
+.ArticleCopy
+{
     font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     width: 100%;
     margin: 1.3em auto 0;
@@ -464,10 +466,12 @@ i
     padding: 0 3rem;*/
     padding: 0 1.6rem;
 }
-.ArticleCopy p {
+.ArticleCopy p 
+{
     text-rendering: optimizeLegibility;
 }
-.ArticleCopy blockquote {
+.ArticleCopy blockquote 
+{
     border-radius: 3px;
     position: relative;  /*  <--- */
     font-style: italic;
@@ -483,7 +487,8 @@ i
 }
 /* -- create the quotation marks -- */
 .ArticleCopy blockquote:before,
-.ArticleCopy blockquote:after{
+.ArticleCopy blockquote:after
+{
     font-family: FontAwesome;
     position: absolute;
     /* -- inside the relative position of blockquote -- */
@@ -491,17 +496,27 @@ i
     color: #E8E8E8;
     font-size: 34px;
 }
-.ArticleCopy blockquote:before{
+.ArticleCopy blockquote:before
+{
     content: "\f10d";
     margin-right: 13px;
     right: 100%;
 }
-.ArticleCopy blockquote:after{
+.ArticleCopy blockquote:after
+{
     content: "\f10e";
     margin-left: 13px;
     left: 100%;  
 }
 
+.quote-by 
+{
+    display: block;
+    padding: 0.5em 0 0 0.8em;
+    text-align: right;
+    font-size: 13px;
+    font-style: italic;
+}
 /***************************************************/
 
 
@@ -582,67 +597,12 @@ i
 
 .quote-by {
   display: block;
-  padding-right: 10px;
+  padding: 0.5em 0 0 0.8em;
   text-align: right;
   font-size: 13px;
   font-style: italic;
-  color: #84775c;
 }
 
 .lt-ie8 .notepaper {
   padding: 15px 25px;
-}
-/*****************************************/
-.alt blockquote {
-  margin: 0 auto;
-  padding: 1em;
-  border-left: 5px solid #999;
-}
-.alt blockquote:before {
-  display: none;
-}
-.alt blockquote:not(:first-of-type) {
-  margin-top: .5em;
-}
-.alt blockquote p {
-  color: #555;
-  font-size: 12pt;
-  line-height: 1.4;
-  font-family: 'PT Serif', Cambria, 'Hoefler Text', Utopia, 'Liberation Serif', 'Nimbus Roman No9 L Regular', Times, 'Times New Roman', serif;
-}
-.alt blockquote footer {
-  margin-top: .5em;
-  padding: 0;
-  color: #777;
-  font-size: 12pt;
-  text-align: left;
-  font-style: italic;
-}
-.alt blockquote footer:before {
-  content: '— ';
-}
-.alt blockquote:nth-of-type(even) {
-  text-align: right;
-  border-left: none;
-  border-right: 5px solid #999;
-}
-.alt blockquote:nth-of-type(even) footer {
-  text-align: right;
-}
-.alt blockquote:nth-of-type(even) footer:before {
-  content: '';
-}
-.alt blockquote:nth-of-type(even) footer:after {
-  content: ' —';
-}
-@element 'blockquote' and (min-width: 300px) {
-    .alt blockquote {
-    padding: 1em 20% 1em 1em;
-  }
-  .alt blockquote p {
-    font-size: 14pt;
-  }
-  .alt blockquote:nth-of-type(even) {
-    padding: 1em 1em 1em 20%;
-  }
 }

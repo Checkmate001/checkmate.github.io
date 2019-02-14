@@ -1,11 +1,11 @@
 $(document).ready(function(){
   // Add smooth scrolling to all links
     
-    //$("section.body").hide(0);
+    $("section.body").hide(0);
     
   $(".scroll a").on('click', function(event) {
       
-      //$("section.body").show(0);
+      $("section.body").show(0);
       
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
