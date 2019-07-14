@@ -30,6 +30,11 @@ $(document).ready(function(){
       
     $("section.hero").hide(0);
   });
+    
+    $("button.contact").click(function() {
+        $('html,body').animate({scrollTop: $("#contact").offset().top}, 'fast');
+    });
+    
 });
 
 //=================================================
