@@ -107,8 +107,6 @@ a   {text-decoration: none;}
     position: relative;
     /******************************/
     display: grid;
-    /*grid-template-rows: 2fr 3fr 1fr 1fr;
-    grid-template-columns: 1fr 3fr 1fr 1fr;*/
 }
 
 .hero-main
@@ -116,8 +114,6 @@ a   {text-decoration: none;}
     text-align: left;
     color: white;
     font-family: Ariel, sans-serif;
-    /*grid-row-start: 2;
-    grid-column-start: 2;*/
 }
 
 .hero-main p
@@ -133,25 +129,17 @@ a   {text-decoration: none;}
     margin: 1em 0 0;
 }
 
-.hero-main button:first-of-type
+.button-accent
 {
     background-color: white;
     border: 1px solid #00bbff;
     color: #00bbff;
 }
 
-/*.social
-{
-    grid-row-start: 3;
-    grid-column-start: 2;
-}*/
-
 .scroll
 {
     margin: auto;
     text-align: center;
-    /*grid-row-start: 3;
-    grid-column-start: 3*/
 }
 
 /************** Header and Nav *********************/
@@ -269,29 +257,6 @@ nav a:hover
 {
     text-decoration: underline;
 }
-
-/*.section-header
-{
-    position: relative;
-}
-
-.section-header::before
-{
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    margin-top: -2px;
-    width: 100%;
-    border-bottom: 3px solid rgb(169, 169, 169);
-}
-
-.section-header span
-{
-    position: relative;
-    background-color: white;
-    padding: 0 0.3em;
-}*/
 
 /***************** Footer ************************/
 
@@ -699,7 +664,8 @@ nav ul
     right: 0;
     height: 80vh;
     width: 100vw;
-    top: 18vh;
+    /*top: 13vh;*/
+    top: 112px;
     background-color: #00bbff;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;

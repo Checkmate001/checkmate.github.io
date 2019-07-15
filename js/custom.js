@@ -1,5 +1,3 @@
-console.log("Hello");
-
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('nav ul');
@@ -7,7 +5,7 @@ const navSlide = () => {
 
 
     burger.addEventListener('click', () => {
-
+        
         //Show and Hide Nav
         nav.classList.toggle('nav-active'); 
 
@@ -29,7 +27,25 @@ const navSlide = () => {
     });
 };
 
+const toggleButtonAccent = () => {
+    const projectButton = document.querySelector('.hero-main button:first-of-type');  
+    const portfolioButton = document.querySelector('.hero-main button:last-of-type');
+    
+    //Toggle Button Accent onMouseover
+    portfolioButton.addEventListener('mouseover', () => {
+        projectButton.classList.toggle('button-accent');
+        portfolioButton.classList.toggle('button-accent');
+    });
+    
+    //Toggle Button Accent onMouseout
+    portfolioButton.addEventListener('mouseout', () => {
+        projectButton.classList.toggle('button-accent');
+        portfolioButton.classList.toggle('button-accent');
+    });
+};
+
 navSlide();
+toggleButtonAccent();
 
 $(document).ready(function(){
 
