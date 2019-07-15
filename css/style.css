@@ -124,12 +124,12 @@ a   {text-decoration: none;}
     font-family: Ariel, sans-serif;
 }
 
-.hero-main button
+.hero-main button, .hero-main a.button
 {
     margin: 1em 0 0;
 }
 
-.button-accent
+.button-accent.button-accent
 {
     background-color: white;
     border: 1px solid #00bbff;
@@ -553,13 +553,12 @@ input[type=submit]:hover
     border: 1px solid #00bbff;
 }
 
-button 
+button, a.button
 {
     background-color: #00bbff;
     border: 1px solid white;
     color: white;
     padding: 12px 20px;
-    border: 1px solid white;
     border-radius: 4px;
     
     text-align: center;
@@ -569,7 +568,7 @@ button
     cursor: pointer;
 }
 
-button:hover
+button:hover, a.button:hover
 {
     background-color: white;
     border: 1px solid #00bbff;
@@ -623,7 +622,7 @@ header li   {width: 33.33%;}
     grid-column-start: 1;
 }
 
-button {font-size: 0.8em;}
+button, a.button {font-size: 0.8em;}
 
 /*Nav*/
     
@@ -762,7 +761,7 @@ nav ul li
     }
     
     .scroll p {display: none;}
-    button {font-size: 0.8em;}
+    button, a.button {font-size: 0.8em;}
     
     /*Nav*/
     
@@ -845,7 +844,7 @@ nav ul li
     }
     
     .scroll p {display: block;}
-    button {font-size: inherit;}
+    button, a.button {font-size: inherit;}
     
     /*Nav*/
     

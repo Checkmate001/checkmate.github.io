@@ -27,10 +27,10 @@ const navSlide = () => {
     });
 };
 
-const toggleButtonAccent = () => {
-    const projectButton = document.querySelector('.hero-main button:first-of-type');  
-    const portfolioButton = document.querySelector('.hero-main button:last-of-type');
-    
+const projectButton = document.querySelector('.hero-main a.button:first-of-type');  
+const portfolioButton = document.querySelector('.hero-main a.button:last-of-type');
+
+const toggleButtonAccent = () => {    
     //Toggle Button Accent onMouseover
     portfolioButton.addEventListener('mouseover', () => {
         projectButton.classList.toggle('button-accent');
