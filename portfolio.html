@@ -18,7 +18,7 @@
         <!-- ********************************************************* -->
         
         
-        <link rel="stylesheet" type="text/css" href="css/test.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
         <link rel="stylesheet" type="text/css" href="css/grid.css"/>
         <link rel="stylesheet" type="text/css" href="css/effects.css"/> 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -65,117 +65,105 @@
                             <li class="nav nav-current"><a href="#" class="current">Portfolio</a></li>
                             <li class="nav nav-right"><a href="contact.html">Contact</a></li>
                         </ul>
+                        <div class="burger">
+                            <div class="line-one"></div>
+                            <div class="line-two"></div>
+                            <div class="line-three"></div>
+                        </div>
                     </nav>
                 </div>
             </header>
 
             <div class="main">
                 <section class="portfolio">
-                    <div class="row">
-                        <div class="col-12"><h3 class="section-header"><span >Portfolio</span></h3></div>
-                        <div class="col-4">
-                            <div class="project">
-                                <div class="img-wrap">
-                                    <img class="project-img" src="media/img/spidergram.png" />
-                                    <img class="project-logo" src="media/img/xcm.jpg" />
-                                </div>
-                                <div class="project-desc">
-                                    <h4>Xenon Capital Markets</h4>
-                                    <ul class="badge-list">
-                                        <li><span>C#</span></li>
-                                        <li><span>BM Reports API</span></li>
-                                        <li><span>Finance</span></li>
-                                    </ul>
-                                </div>
-                                <div class="project-text">                         
-                                    <!--<p>
-                                        - Spidergram is a tool used by <a target="_blank" href="https://xenoncapitalmarkets.com/">Xenon Capital Markets Ltd.</a> to view live metrics for the UK gas and power market
-                                        <br>
-                                        - I created the tool using C#. It uses the BM Reports electricity data API, and uses the data to perform calculations.
-                                        <br>
-                                        - The results are outputted to a form for ease of use and readability for traders on the floor.
-                                    </p>
-                                    <br>-->
-                                    <p>
-                                        Spidergram is a tool used by <a target="_blank" href="https://xenoncapitalmarkets.com/">Xenon Capital Markets Ltd.</a> 
-                                        <br><br>
-                                        <b>The BRIEF:</b> Create a program to view live metrics for the UK gas and power market
-                                        <br>
-                                        <b>The ACTION:</b> I created the tool using C#. It uses the BM Reports electricity data API, and uses the data to perform live calculations and display trading metrics.
-                                        <br>
-                                        <b>The RESULT:</b> Improvements in speed, ease of use and readability for traders on the floor.
-                                    </p>
-                                </div>
+                    <div class="col-12"><h3><span >Portfolio</span></h3><br><hr><hr><br></div>
+
+                    <div class="col-4">
+                        <div class="project">
+                            <div class="img-wrap">
+                                <img class="project-img" src="media/img/spidergram.png" />
+                                <img class="project-logo" src="media/img/xcm.jpg" />
+                            </div>
+
+                            <div class="project-desc">
+                                <h4>Xenon Capital Markets</h4>
+                                <ul class="badge-list">
+                                    <li><span>C#</span></li>
+                                    <li><span>BM Reports API</span></li>
+                                    <li><span>Finance</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="project-text">
+                                <p>
+                                    Spidergram is a tool used by <a target="_blank" href="https://xenoncapitalmarkets.com/">Xenon Capital Markets Ltd.</a> 
+                                    <br><br>
+                                    <b>The BRIEF:</b> Create a program to view live metrics for the UK gas and power market
+                                    <br>
+                                    <b>The ACTION:</b> I created the tool using C#. It uses the BM Reports electricity data API, and uses the data to perform live calculations and display trading metrics.
+                                    <br>
+                                    <b>The RESULT:</b> Improvements in speed, ease of use and readability for traders on the floor.
+                                </p>
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="project">
-                                <div class="img-wrap">
-                                    <img class="project-img" src="media/img/pedalplan.png" />
-                                    <img class="project-logo pp" src="media/img/pp-logo.png" />
-                                </div>
-                                <div class="project-desc">
-                                    <h4>PedalPlan</h4>
-                                    <ul class="badge-list">
-                                        <li><span>PHP</span></li>
-                                        <li><span>Google Maps API</span></li>
-                                        <li><span>Open Data</span></li>
-                                    </ul>
-                                </div>
-                                
-                                <div class="project-text">
-                                    <!--<p>
-                                        - PedalPlan was our winning entry to <a target="_blank" href="https://medium.com/@mardixon/young-rewired-state-festival-of-code-the-future-s-looking-bright-foc2015-b0fcb58aaa44">YRS 2015</a>.
-                                        <br>
-                                        - It creates safer routes for cyclists based on live traffic data, historical accident data, and weather conditions.
-                                        <br>
-                                        - Created using PHP and multiple open data sources.
-                                    </p>
-                                    <br>-->
-                                    <p>
-                                        PedalPlan was our winning entry to <a target="_blank" href="https://medium.com/@mardixon/young-rewired-state-festival-of-code-the-future-s-looking-bright-foc2015-b0fcb58aaa44">YRS 2015</a>.
-                                        <br><br>
-                                        <b>The BRIEF:</b> Create a solution to a modern world problem using open data.
-                                        <br>
-                                        <b>The ACTION:</b> We used PHP, Gov.uk data, and the Google Maps API to create safer routes for cyclists based on live traffic data, historical accident data, and weather conditions.
-                                        <br>
-                                        <b>The RESULT:</b> Won the Should Exist Award at YRS2015. The website allows free and accesible safer cycling routes for all. 
-                                    </p>
-                                </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="project">
+                            <div class="img-wrap">
+                                <img class="project-img" src="media/img/pedalplan.png" />
+                                <img class="project-logo pp" src="media/img/pp-logo.png" />
+                            </div>
+
+                            <div class="project-desc">
+                                <h4>PedalPlan</h4>
+                                <ul class="badge-list">
+                                    <li><span>PHP</span></li>
+                                    <li><span>Google Maps API</span></li>
+                                    <li><span>Open Data</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="project-text">
+                                <p>
+                                    PedalPlan was our winning entry to <a target="_blank" href="https://medium.com/@mardixon/young-rewired-state-festival-of-code-the-future-s-looking-bright-foc2015-b0fcb58aaa44">YRS 2015</a>.
+                                    <br><br>
+                                    <b>The BRIEF:</b> Create a solution to a modern world problem using open data.
+                                    <br>
+                                    <b>The ACTION:</b> We used PHP, Gov.uk data, and the Google Maps API to create safer routes for cyclists based on live traffic data, historical accident data, and weather conditions.
+                                    <br>
+                                    <b>The RESULT:</b> Won the Should Exist Award at YRS2015. The website allows free and accesible safer cycling routes for all. 
+                                </p>
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="project">
-                                <div class="img-wrap">
-                                    <img class="project-img" src="media/img/squadsocial.png" />
-                                    <img class="project-logo" src="media/img/squad-logo.webp" />
-                                </div>
-                                <div class="project-desc">
-                                    <h4>SquadSocial Ltd.</h4>
-                                    <ul class="badge-list">
-                                        <li><span>Python</span></li>
-                                        <li><span>HTML/CSS</span></li>
-                                        <li><span>Wix</span></li>                                    
-                                        <li><span>Meetup API</span></li>
-                                        <li><span>OutSavvy API</span></li>
-                                    </ul>
-                                </div>
-                                <div class="project-text">
-                                    <!--<p>
-                                        - Helped to manage the website content for <a target="_blank" href="http://squad.social">SQUADSOCIAL</a> and to ensure responsive design.
-                                        <br>
-                                        - Created a script to automate the retreival of events to use in the app.
-                                    </p>-->
-                                    <p>
-                                        Internship with <a target="_blank" href="http://squad.social">SQUAD SOCIAL</a>.
-                                        <br><br>
-                                        <b>The BRIEF:</b> To help with peripheral technical requirements outside of the app.
-                                        <br>
-                                        <b>The ACTION:</b> Created a script to automate the retrieval of events to use in the app. Helped to manage the website content for <a target="_blank" href="http://squad.social">SQUADSOCIAL</a> and to ensure responsive design.
-                                        <br>
-                                        <b>The RESULT:</b> Assisted with website management during launch of the app.
-                                    </p>
-                                </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="project">
+                            <div class="img-wrap">
+                                <img class="project-img" src="media/img/squadsocial.png" />
+                                <img class="project-logo" src="media/img/squad-logo.webp" />
+                            </div>
+
+                            <div class="project-desc">
+                                <h4>SquadSocial Ltd.</h4>
+                                <ul class="badge-list">
+                                    <li><span>Python</span></li>
+                                    <li><span>HTML/CSS</span></li>
+                                    <li><span>Wix</span></li>                                    
+                                    <li><span>Meetup API</span></li>
+                                    <li><span>OutSavvy API</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="project-text">
+                                <p>
+                                    Internship with <a target="_blank" href="http://squad.social">SQUAD SOCIAL</a>.
+                                    <br><br>
+                                    <b>The BRIEF:</b> To help with peripheral technical requirements outside of the app.
+                                    <br>
+                                    <b>The ACTION:</b> Created a script to automate the retrieval of events to use in the app. Helped to manage the website content for <a target="_blank" href="http://squad.social">SQUADSOCIAL</a> and to ensure responsive design.
+                                    <br>
+                                    <b>The RESULT:</b> Assisted with website management during launch of the app.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -183,9 +171,10 @@
                 <section class="testimonials row">
                     <div class="col-8 mobile-nopad">
                         <div>
-                            <div class="mobile-pad">
-                                <h3 class="section-header"><span>Resume</span></h3>
-                            </div>
+                            <!--<div class="mobile-pad">-->
+                                <h3>Resume</h3>
+                                <br><hr><hr><br>
+                            <!--</div>-->
                             <div class="mobile-pad resume-item">
                                 <h4>Xenon Captial Markets</h4>
                                 <h6>Freelance Programmer</h6>
@@ -222,76 +211,63 @@
                             </blockquote>
                         </div>
                     </div>
+                    
                     <div class="col-4 progress">
-                                <h3 class="section-header"><span>Skills</span></h3>
-                                <h4>Languages</h3>
-                                <ul class="progress-list">
-                                    <li>
-                                        <p>C#</p>
-                                        <div class="progress-bar"><div class="lang-bar-csharp"></div></div>
+                        <h3>Skills</h3>
+                        <br><hr><hr><br>
+                        <h4>Languages</h4>
+                        <ul class="progress-list">
+                            <li>
+                                <p>C#</p>
+                                <div class="progress-bar"><div class="lang-bar-csharp"></div></div>
 
-                                    </li>
-                                    <li>
-                                        <p>Java</p>
-                                        <div class="progress-bar"><div class="lang-bar-java"></div></div>
-                                    </li>
-                                    <li>
-                                        <p>C++</p>
-                                        <div class="progress-bar"><div class="lang-bar-cplusplus"></div></div>
-                                    </li>
-                                    <li>
-                                        <p>HTML/CSS</p>
-                                        <div class="progress-bar"><div class="lang-bar-html"></div></div>
-                                    </li>
-                                    <li>
-                                        <p>Python</p>
-                                        <div class="progress-bar"><div class="lang-bar-python"></div></div>
-                                    </li>
-                                </ul>
-                                <h4>Frameworks/ APIs</h3>
-                                <ul class="progress-list">
-                                    <li>
-                                        <p>JQuery</p>
-                                        <div class="progress-bar"><div class="lang-bar-jquery"></div></div>
+                            </li>
+                            <li>
+                                <p>Java</p>
+                                <div class="progress-bar"><div class="lang-bar-java"></div></div>
+                            </li>
+                            <li>
+                                <p>C++</p>
+                                <div class="progress-bar"><div class="lang-bar-cplusplus"></div></div>
+                            </li>
+                            <li>
+                                <p>HTML/CSS</p>
+                                <div class="progress-bar"><div class="lang-bar-html"></div></div>
+                            </li>
+                            <li>
+                                <p>Python</p>
+                                <div class="progress-bar"><div class="lang-bar-python"></div></div>
+                            </li>
+                        </ul>
+                        <h4>Frameworks/ APIs</h4>
+                        <ul class="progress-list">
+                            <li>
+                                <p>JQuery</p>
+                                <div class="progress-bar"><div class="lang-bar-jquery"></div></div>
 
-                                    </li>
-                                    <li>
-                                        <p>DirectX11</p>
-                                        <div class="progress-bar"><div class="lang-bar-DX"></div></div>
-                                    </li>
-                                    <li>
-                                        <p>OpenGL 4</p>
-                                        <div class="progress-bar"><div class="lang-bar-opengl"></div></div>
-                                    </li>
-                                    <li>
-                                        <p>.NET</p>
-                                        <div class="progress-bar"><div class="lang-bar-dotnet"></div></div>
-                                    </li>
-                                </ul>
-                                <h4>Others</h3>
-                                <ul class="badge-list">
-                                    <li><span>PHP</span></li>
-                                    <li><span>Game Design</span></li>
-                                    <li><span>SEO</span></li>
-                                    <li><span>Responsive Design</span></li>
-                                </ul>
-                            </div>
+                            </li>
+                            <li>
+                                <p>DirectX11</p>
+                                <div class="progress-bar"><div class="lang-bar-DX"></div></div>
+                            </li>
+                            <li>
+                                <p>OpenGL 4</p>
+                                <div class="progress-bar"><div class="lang-bar-opengl"></div></div>
+                            </li>
+                            <li>
+                                <p>.NET</p>
+                                <div class="progress-bar"><div class="lang-bar-dotnet"></div></div>
+                            </li>
+                        </ul>
+                        <h4>Others</h4>
+                        <ul class="badge-list">
+                            <li><span>PHP</span></li>
+                            <li><span>Game Design</span></li>
+                            <li><span>SEO</span></li>
+                            <li><span>Responsive Design</span></li>
+                        </ul>
+                    </div>
                 </section>
-                <!--<section class="project">
-                    <h3>Project Lightboxes</h3><br>
-                    <div class="col-7 screenshot">
-                        <img src="media/img/pedalplan.png" />
-                    </div>
-                    <div class="col-5">
-                        <p>
-                            - PedalPlan is a website I created as part of a team for Young Rewired State, a programming competition focused on the use of open data to solve everyday problems.
-                            <br>
-                            - We won the “Should Exist Award” for our site, which creates safer routes for cyclists based on live traffic data, historical accident data, and weather conditions.
-                            <br>
-                            - We used PHP and several open data sources (data.gov.uk, Bing Weather, Google Maps API) to gather information to funnel cyclists away from potentially dangerous roads, as can be a major issue in the UK.
-                        </p>
-                    </div>
-                </section> -->
             </div>
 
             <footer id="footer">
@@ -316,23 +292,7 @@
                         <figcaption class="quote-by">Xenon Capital Ltd.</figcaption>
                     </div>-->
         </section>
-        
-    <script>
-        $(document).ready(function(){
-
-            $(".scroll a").on('click', function(event) {      
-                $('html,body').animate({scrollTop: $("#body").offset().top}, 'fast');
-            });
     
-            $("button.contact").click(function() {
-                $('html,body').animate({scrollTop: $("#contact").offset().top}, 'fast');
-            });
-
-            $(".hero").on( 'scroll', function(){
-                $('html,body').animate({scrollTop: $("#body").offset().top}, 'fast');
-            });
-        });
-        //=================================================    
-    </script>
+    <script src="js/custom.js"></script>
     </body>
 </html>

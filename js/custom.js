@@ -1,40 +1,47 @@
+console.log("Hello");
+
+const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('nav ul');
+    const navLinks = document.querySelectorAll('nav ul li');
+
+
+    burger.addEventListener('click', () => {
+
+        //Show and Hide Nav
+        nav.classList.toggle('nav-active'); 
+
+        //Nav Links Fade Animation
+        navLinks.forEach((link, index) => {
+
+            if(link.style.animation)
+            {
+                link.style.animation = '';
+            }
+            else
+            {
+                link.style.animation = `navLinksFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+            }
+        });
+
+        //Burger Animation
+        burger.classList.toggle('clicked');
+    });
+};
+
+navSlide();
+
 $(document).ready(function(){
-  // Add smooth scrolling to all links
-    
-    $("section.body").hide(0);
-    
-  $(".scroll a").on('click', function(event) {
-      
-      $("section.body").show(0);
-      
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
 
-      // Store hash
-      var hash = this.hash;
+    $(".scroll a").on('click', function(event) {      
+        $('html,body').animate({scrollTop: $("#body").offset().top}, 'fast');
+    });
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      //$('html, body').animate({
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-          //$("section.hero").hide(0);
-      });
-    } // End if
-      
-    $("section.hero").hide(0);
-  });
-    
     $("button.contact").click(function() {
         $('html,body').animate({scrollTop: $("#contact").offset().top}, 'fast');
     });
-    
-});
 
-//=================================================
+    $(".hero").on( 'scroll', function(){
+        $('html,body').animate({scrollTop: $("#body").offset().top}, 'fast');
+    });
+});

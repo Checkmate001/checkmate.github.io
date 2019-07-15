@@ -28,7 +28,6 @@ html
 body
 {
     margin: 0;
-    overflow-x: hidden;
 }
 
 div
@@ -99,25 +98,38 @@ a   {text-decoration: none;}
 
 /*************** Hero Section ********************/
 
+.hero-main
+{
+    text-align: center;
+    color: white;
+    font-family: Ariel, sans-serif;
+}
+
+.main a, .main a:visited
+{
+    color: #00bbff;
+}
+
+.main a:hover
+{
+    text-decoration: underline;
+}
+
 .hero
 {
     background-color: #00bbff;
     height: 100%;
     width: 100%;
     position: relative;
-    /******************************/
-    display: grid;
-    /*grid-template-rows: 2fr 3fr 1fr 1fr;
-    grid-template-columns: 1fr 3fr 1fr 1fr;*/
 }
 
 .hero-main
 {
-    text-align: left;
-    color: white;
-    font-family: Ariel, sans-serif;
-    /*grid-row-start: 2;
-    grid-column-start: 2;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
 
 .hero-main p
@@ -128,45 +140,24 @@ a   {text-decoration: none;}
     font-family: Ariel, sans-serif;
 }
 
-.hero-main button
-{
-    margin: 1em 0 0;
-}
-
-.hero-main button:first-of-type
-{
-    background-color: white;
-    border: 1px solid #00bbff;
-    color: #00bbff;
-}
-
-/*.social
-{
-    grid-row-start: 3;
-    grid-column-start: 2;
-}*/
-
 .scroll
 {
+    position: absolute;
+    bottom: 2.6em;
+    left: 0;
+    right: 0;
     margin: auto;
     text-align: center;
-    /*grid-row-start: 3;
-    grid-column-start: 3*/
 }
 
 /************** Header and Nav *********************/
 
 header
 {
-    /*margin: 0 auto;*/
+    margin: 0 auto;
     text-align: center;
+    /*z-index: 200;*/
     background-color: #00bbff;
-    padding: 1em !important;
-    /*Sticky Header*/
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    z-index: 1;
 }
 
 header .row
@@ -179,95 +170,9 @@ header a:visited    {color: white;}
 
 #headshot
 {
-    height: 80px;
-    width: 80px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-}
-
-.title-row
-{
-    display: grid;
-}
-
-nav
-{
-    padding: 0 !important;
-}
-
-header h1
-{
-    font-size: 20px;
-}
-
-header h2
-{
-    font-size: 15px;
-    padding-top: 0.2em;
-}
-
-nav li
-{
-    font-size: 1em !important;
-}
-
-nav li, footer li
-{
-    display: inline;
-    font-size: 20px;
-}
-
-nav a 
-{
-    padding: 0 0.5em; /*150px*/
-    color: rgb(255, 255, 255, 0.5);
-}
-
-nav a.current
-{
-    color: rgb(255, 255, 255, 1);
-}
-
-nav a:hover
-{
-    color: rgb(255, 255, 255, 0.9);
-}
-
-.burger
-{
-    cursor: pointer;
-}
-
-.burger div
-{
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px;
-    transition: all 0.3s ease;
-}
-
-/*********** Main Section **************/
-
-.main
-{
-    position: relative;
-    display: block;
-    overflow: hidden;
-    margin: auto;
-    padding: 1em 0;
-    width: 85%
-}
-
-.main p {font-size: 15px;}
-
-.main a, .main a:visited
-{
-    color: #00bbff;
-}
-
-.main a:hover
-{
-    text-decoration: underline;
 }
 
 .section-header
@@ -293,13 +198,50 @@ nav a:hover
     padding: 0 0.3em;
 }
 
+nav li, footer li
+{
+    display: inline;
+    font-size: 20px;
+}
+
+nav a 
+{
+    padding: 0 0.5em; /*150px*/
+    color: rgb(255, 255, 255, 0.5);
+}
+
+nav a.current
+{
+    color: rgb(255, 255, 255, 1);
+}
+
+nav a:hover
+{
+    color: rgb(255, 255, 255, 0.9);
+}
+
+/*********** Main Section **************/
+
+.main
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: auto;
+    padding: 1em 0;
+    width: 85%
+}
+
+.main p {font-size: 15px;}
+
 /***************** Footer ************************/
 
 footer
 {
-    padding: 1em;
-    /*margin: 0 auto;*/
+    padding: 2em;
+    margin: 0 auto;
     text-align: center;
+    /*z-index: 200;*/
     background-color: #00bbff;
 }
 
@@ -331,6 +273,7 @@ i
     font-size: 20px;
     width: 42px;
     line-height: 40px;
+    color: #516075;
     border-radius: 4px;
     border: 1px solid #dde4e6;
 }
@@ -456,8 +399,6 @@ i
 
 .project
 {
-    display: grid;
-    grid-template-rows: 200px 150px 270px;
     text-align: center;
 }
 
@@ -595,7 +536,7 @@ input[type=submit]:hover
 
 button 
 {
-    background-color: #00bbff;
+    background-color: #00bbff; /* Green */
     border: 1px solid white;
     color: white;
     padding: 12px 20px;
@@ -612,15 +553,15 @@ button
 button:hover
 {
     background-color: white;
-    border: 1px solid #00bbff;
     color: #00bbff;
+    border: 1px solid #00bbff;
 }
 
 /**************** Mobile First Stylings *************************/
 
+.title-row .title   {position: relative;top:0%}
 
-/* Extra small devices (phones, 600px and down) */
-
+.hero-main      {width: 85%;}
  header         {padding: 0 0.5em 1em;}
  nav            {padding: 0.5em 0 0;}
 
@@ -637,121 +578,12 @@ button:hover
 
 header li   {width: 33.33%;}
 
-/*Splash*/
 
-.hero
-{
-    grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
-} 
-
-.hero-main
-{
-    grid-row-start: 2;
-    justify-self: center;
-    text-align: center;
-}
-
-.social
-{
-    grid-row-start: 3;
-    justify-self: center;
-}
-
-.scroll
-{
-    grid-row-start: 5;
-    grid-column-start: 1;
-}
-
-button {font-size: 0.8em;}
-
-/*Nav*/
-    
-.title-row
-{
-    grid-template-columns: 1fr 2fr 1fr;
-}
-
-header img
-{
-    grid-column-start: 1;
-    align-self: center;
-    justify-self: center;
-}
-
-.title
-{
-    grid-column-start: 2;
-    align-self: center;
-    justify-self: center;
-}
-
-nav
-{
-    grid-column-start: 3;
-    align-self: center;
-    justify-self: center;
-}
-
-nav .burger {display: block;}
-section#body {position: relative;}
-
-nav ul
-{
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    position: absolute;
-    right: 0;
-    height: 80vh;
-    width: 100vw;
-    top: 18vh;
-    background-color: #00bbff;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-}
-
-nav ul li
-{
-    opacity: 0;
-    align-self: center;
-    justify-self: center;
-}
-
-.nav-active
-{
-    transform: translateX(0%);
-}
-
-.clicked .line-one
-{
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.clicked .line-two
-{
-    opacity: 0;
-}
-
-.clicked .line-three
-{
-    transform: rotate(45deg) translate(-5px, -6px);
-}
-
-@keyframes navLinksFade
-{
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) 
 {
+    .title-row  {position: relative;}
+    
+    .hero-main  {width: 85%;}
     header  {padding: 2em;}
     
     nav {padding: 2em 0 0;}
@@ -767,82 +599,19 @@ nav ul li
     
     .mobile-nopad   {padding: 1em;}
     .mobile-pad     {padding: 0;}
-    
-    /*Splash*/
-
-    .hero
-    {
-        grid-template-rows: 2fr 3fr 1fr 1fr;
-        grid-template-columns: 1fr 3fr 1fr 1fr !important;
-        /*grid-template-columns: 3fr 1fr;*/
-    } 
-
-    .hero-main
-    {
-        grid-row-start: 2;
-        grid-column-start: 2;
-        grid-column-end: 4;
-        justify-self: left;
-        text-align: left;
-    }
-
-    .social
-    {
-        grid-row-start: 3;
-        grid-column-start: 2;
-        justify-self: left;
-    }
-
-    .scroll
-    {
-        display: block;
-        grid-row-start: 3;
-        grid-column-start: 3;
-    }
-    
-    .scroll p {display: none;}
-    button {font-size: 0.8em;}
-    
-    /*Nav*/
-    
-    .title-row
-    {
-        grid-template-columns: 100px 200px auto 100px;
-        grid-template-columns: 1fr 2fr 1fr;
-    }
-
-    header img
-    {
-        grid-column-start: 1;
-        align-self: center;
-        justify-self: center;
-    }
-
-    .title
-    {
-        grid-column-start: 2;
-        align-self: center;
-        justify-self: center;
-    }
-
-    nav
-    {
-        grid-column-start: 3;
-        align-self: center;
-        justify-self: center;
-    }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+
 @media only screen and (min-width: 768px)
 {
     .title-row  {position: relative;}
+    .title-row .title   {position: absolute; top:35%}
     
     .hero-main  {width: 100%;}
     header  {padding: 2em;}
     
     nav {padding: 2em 0 0;}
-    nav a   {padding: 0 1.5em;}
+    nav a   {padding: 0 2em;}
     
     h3, h4, h5, , .testimonials h6  {text-align: left;}
     
@@ -854,87 +623,4 @@ nav ul li
     
     .mobile-nopad   {padding: 1em;}
     .mobile-pad     {padding: 0;}
-    
-    /*Splash*/
-
-    .hero
-    {
-        grid-template-rows: 2fr 3fr 1fr 1fr;
-        grid-template-columns: 1fr 3fr 1fr 1fr !important;
-    } 
-
-    .hero-main
-    {
-        grid-row-start: 2;
-        grid-column-start: 2;
-        grid-column-end: 3;
-    }
-
-    .social
-    {
-        grid-row-start: 3;
-        grid-column-start: 2;
-    }
-
-    .scroll
-    {
-        display: block;
-        grid-row-start: 3;
-        grid-column-start: 3;
-    }
-    
-    .scroll p {display: block;}
-    button {font-size: inherit;}
-    
-    /*Nav*/
-    
-    .title-row
-    {
-        /*grid-template-columns: 50px 6.25em 12.5em auto 31.25em 50px;*/
-        grid-template-columns: 50px 80px 170px auto 450px 50px;
-    }
-
-    header img
-    {
-        grid-column-start: 2;
-        align-self: center;
-        justify-self: center;
-    }
-
-    .title
-    {
-        grid-column-start: 3;
-        align-self: center;
-        justify-self: center;
-    }
-
-    nav
-    {
-        grid-column-start: 5;
-        align-self: center;
-        justify-self: center;
-    }
-    
-    nav ul
-    {
-        display: block;
-        position: relative;
-        position: inherit;
-        height: inherit;
-        width: inherit;
-        transform: translateX(0%);
-        transition: all 0s;
-    }
-
-    nav ul li   {opacity: inherit;}
-    
-    nav ul  {display: block;}
-    nav .burger {display: none;}
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px)
-{
-    
-    
 }
