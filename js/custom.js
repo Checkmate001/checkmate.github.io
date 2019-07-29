@@ -52,12 +52,4 @@ $(document).ready(function(){
     $(".scroll a").on('click', function(event) {      
         $('html,body').animate({scrollTop: $("#body").offset().top}, 'fast');
     });
-
-    $("button.contact").click(function() {
-        $('html,body').animate({scrollTop: $("#contact").offset().top}, 'fast');
-    });
-
-    $(".hero").on( 'scroll', function(){
-        $('html,body').animate({scrollTop: $("#body").offset().top}, 'fast');
-    });
 });

@@ -25,9 +25,8 @@ html
     scroll-behavior: smooth;
 }
 
-body
+body, section
 {
-    margin: 0;
     overflow-x: hidden;
 }
 
@@ -418,6 +417,7 @@ i
 {
     display: grid;
     grid-template-rows: 200px 150px 270px;
+    grid-template-rows: 12.5em 9.375em 16.875em;
     text-align: center;
 }
 
@@ -600,7 +600,7 @@ header li   {width: 33.33%;}
 
 .hero
 {
-    grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr auto 1fr 1fr 1fr;
 } 
 
 .hero-main
@@ -734,7 +734,6 @@ nav ul li
     {
         grid-template-rows: 2fr 3fr 1fr 1fr;
         grid-template-columns: 1fr 3fr 1fr 1fr !important;
-        /*grid-template-columns: 3fr 1fr;*/
     } 
 
     .hero-main
