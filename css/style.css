@@ -416,8 +416,9 @@ i
 .project
 {
     display: grid;
-    grid-template-rows: 200px 150px 270px;
-    grid-template-rows: 12.5em 9.375em 16.875em;
+    grid-template-rows: none;
+    /*grid-template-rows: 200px 150px 270px;
+    grid-template-rows: 12.5em 9.375em 16.875em;*/
     text-align: center;
 }
 
@@ -722,7 +723,7 @@ nav ul li
     .portfolio .col-4,   {border: none; margin-bottom: 0;}
     .resume-item    {border: none; margin: 1em 0;}
     .project-desc   {margin: 1.5em 0 0;}
-    .project-desc h4. .progress h4  {text-align: center;}
+    .project-desc h4, .progress h4  {text-align: center;}
     .tweets {display: block;}
     
     .mobile-nopad   {padding: 1em;}
@@ -889,6 +890,12 @@ nav ul li
     
     nav ul  {display: block;}
     nav .burger {display: none;}
+    
+    /********** Portfolio **************/
+    .project
+    {
+        grid-template-rows: 200px 150px 270px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
