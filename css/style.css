@@ -86,6 +86,7 @@ h2
 }
 
 h3  {font-size: 1.1em;}
+h4  {font-size: 1.0em;}
 h6  {font-weight: normal;}
 
 p
@@ -95,6 +96,11 @@ p
 }
 
 a   {text-decoration: none;}
+
+#aboutMe h4
+{
+    padding-bottom: 0.25em;
+}
 
 /*************** Hero Section ********************/
 
@@ -232,6 +238,14 @@ nav a:hover
     margin: 5px;
     transition: all 0.3s ease;
 }
+
+/*********** Main Section **************/
+
+.section-header
+{
+    line-height: 16px;
+}
+
 
 /*********** Main Section **************/
 
@@ -720,7 +734,7 @@ nav ul li
    
     h3, h4, h5, .testimonials h6    {text-align: left;}
     
-    .portfolio .col-4,   {border: none; margin-bottom: 0;}
+    .portfolio .col-4,   {/*border: none;*/ margin-bottom: 0;}
     .resume-item    {border: none; margin: 1em 0;}
     .project-desc   {margin: 1.5em 0 0;}
     .project-desc h4, .progress h4  {text-align: center;}
@@ -791,6 +805,19 @@ nav ul li
         align-self: center;
         justify-self: center;
     }
+    
+    /*Portfolio
+    .portfolio .col-4    {border: 1px solid #00bbff;}
+    .portfolio .col-4    {margin-right: 1em;}
+    .portfolio .col-4:last-of-type   {margin-right: 0;}
+    
+    .portfolio .project-desc 
+    {
+        border-top: 1px solid #00bbff;
+        border-bottom: 1px solid #00bbff;
+        padding: 1em 0 0.6em;
+        margin: 1em 0 1em;
+    }*/
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -805,8 +832,7 @@ nav ul li
     nav a   {padding: 0 1.5em;}
     
     h3, h4, h5, , .testimonials h6  {text-align: left;}
-    
-    .portfolio .col-4   {border: none; margin-bottom: 0;}
+
     .resume-item    {border: none; margin: 1em 0;}
     .project-desc   {margin: 1.5em 0 0;}
     .project-desc h4, .progress h4  {text-align: center;}
@@ -889,18 +915,29 @@ nav ul li
     nav ul li   {opacity: inherit;}
     
     nav ul  {display: block;}
-    nav .burger {display: none;}
-    
-    /********** Portfolio **************/
-    .project
-    {
-        grid-template-rows: 200px 150px 270px;
-    }
+    nav .burger {display: none;}    
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px)
 {
+     /*Portfolio*/
+    .portfolio .col-4    {border: 1px solid #00bbff;}
+    .portfolio .col-4    {margin-right: 1em;}
+    .portfolio .col-4:last-of-type   {margin-right: 0;}
     
+    .portfolio .project-desc 
+    {
+        border-top: 1px solid #00bbff;
+        border-bottom: 1px solid #00bbff;
+        padding: 1em 0 1em;
+        margin: 1em 0 1em;
+    }
+    
+    .project
+    {
+        grid-template-rows: 200px 150px auto;
+        grid-template-rows: 200px 175px auto;
+    }
     
 }

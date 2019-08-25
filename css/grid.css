@@ -36,8 +36,9 @@ section.body, section.hero-main
 {
     display: block;
 }
+/*768px*/
 
-@media only screen and (min-width: 768px)
+@media only screen and (min-width: 992px)
 {
     section {grid-template-columns: repeat(12, 1fr);}
     
